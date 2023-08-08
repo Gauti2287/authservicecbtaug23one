@@ -50,7 +50,7 @@ public class MainRestController
     @PostMapping("save/user/type")
     public ResponseEntity<Usertypelink> saveUserType(@RequestParam String username, @RequestParam String type)
     {
-        Usertypelink link = new Usertypelink();
+        Usertypelink link = new Usertypelink();     
         link.setLinkid(String.valueOf((int)(Math.random()*100000)));
         link.setUsername(username);
         link.setType(type);
